@@ -1,3 +1,8 @@
+# Student Entry–Exit Management System
+# Author: Sanjay Murugesan
+# Description: Flask-based web application for hostel entry-exit logging
+
+
 from flask import Flask, render_template, request
 import datetime
 
