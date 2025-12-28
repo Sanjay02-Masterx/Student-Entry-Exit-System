@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Entry Exit System</title>
-</head>
-<body>
-    <h1>Student Entry–Exit Management System</h1>
+    <title>Student Entry–Exit Management System</title>
 
-    <a href="/add"><button>Add Student</button></a><br><br>
-    <a href="/entry"><button>Entry / Exit</button></a><br><br>
-    <a href="/view"><button>View Records</button></a>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Student Entry–Exit Management System</h1>
+
+        <a href="/add">
+            <button>
+                <i class="fa-solid fa-user-plus"></i>
+                Add Student
+            </button>
+        </a>
+
+        <a href="/entry">
+            <button>
+                <i class="fa-solid fa-right-left"></i>
+                Entry / Exit
+            </button>
+        </a>
+
+        <a href="/view">
+            <button>
+                <i class="fa-solid fa-table"></i>
+                View Records
+            </button>
+        </a>
+
+        <footer>
+            Developed by <strong>Sanjay Murugesan</strong>
+        </footer>
+
+    </div>
 </body>
 </html>
-<hr>
-<p>
-    Developed by <strong>Sanjay Murugesan</strong>
-</p>
+

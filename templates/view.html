@@ -2,25 +2,32 @@
 <html>
 <head>
     <title>View Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-    <h2>All Records</h2>
+    <div class="container">
 
-    <table border="1" cellpadding="5">
-        <tr>
-            <th>Data</th>
-        </tr>
+        <h2><i class="fa-solid fa-table"></i> View Records</h2>
 
-        {% for record in records %}
-        <tr>
-            <td>{{ record }}</td>
-        </tr>
-        {% endfor %}
-    </table>
+        <table>
+            <tr>
+                <th>Record</th>
+            </tr>
+            {% for record in records %}
+            <tr>
+                <td>{{ record }}</td>
+            </tr>
+            {% endfor %}
+        </table>
 
-    <br>
-    <a href="/">Back to Home</a>
+        <a href="/"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+        <footer>
+            © 2025 <strong>Sanjay Murugesan</strong>
+        </footer>
+
+    </div>
 </body>
 </html>
-<hr>
-<p>© 2025 Sanjay Murugesan</p>

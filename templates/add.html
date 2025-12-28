@@ -2,26 +2,36 @@
 <html>
 <head>
     <title>Add Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-    <h2>Add Student</h2>
+    <div class="container">
 
-    <form method="POST">
-        Student ID:<br>
-        <input type="text" name="student_id"><br><br>
+        <h2><i class="fa-solid fa-user-plus"></i> Add Student</h2>
 
-        Name:<br>
-        <input type="text" name="name"><br><br>
+        <form method="POST">
+            Student ID:
+            <input type="text" name="student_id" required>
 
-        Department:<br>
-        <input type="text" name="department"><br><br>
+            Name:
+            <input type="text" name="name" required>
 
-        <button type="submit">Add Student</button>
-    </form>
+            Department:
+            <input type="text" name="department" required>
 
-    <br>
-    <a href="/">Back to Home</a>
+            <button type="submit">
+                <i class="fa-solid fa-circle-plus"></i> Add Student
+            </button>
+        </form>
+
+        <a href="/"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+        <footer>
+            © 2025 <strong>Sanjay Murugesan</strong>
+        </footer>
+
+    </div>
 </body>
 </html>
-<hr>
-<p>© 2025 Sanjay Murugesan</p>

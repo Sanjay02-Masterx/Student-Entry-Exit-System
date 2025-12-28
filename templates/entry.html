@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Entry / Exit</title>
+    <title>Entry Exit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-    <h2>Entry / Exit Log</h2>
+    <div class="container">
 
-    <form method="POST">
-        Student ID:<br>
-        <input type="text" name="student_id"><br><br>
+        <h2><i class="fa-solid fa-right-left"></i> Entry / Exit</h2>
 
-        Status:<br>
-        <select name="status">
-            <option value="IN">IN</option>
-            <option value="OUT">OUT</option>
-        </select><br><br>
+        <form method="POST">
+            Student ID:
+            <input type="text" name="student_id" required>
 
-        <button type="submit">Submit</button>
-    </form>
+            Status:
+            <select name="status" required>
+                <option value="IN">IN</option>
+                <option value="OUT">OUT</option>
+            </select>
 
-    <br>
-    <a href="/">Back to Home</a>
+            <button type="submit">
+                <i class="fa-solid fa-clock"></i> Submit
+            </button>
+        </form>
+
+        <a href="/"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+        <footer>
+            © 2025 <strong>Sanjay Murugesan</strong>
+        </footer>
+
+    </div>
 </body>
 </html>
-<hr>
-<p>© 2025 Sanjay Murugesan</p>
